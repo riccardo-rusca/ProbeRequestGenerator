@@ -38,7 +38,7 @@ If you use the content of this repository, please reference the following paper:
 * [*main_event.py*](main_event.py) &rarr; contains the main code, where all the input parameters are set.
 * [*packet.py*](packet.py) &rarr; contains the code for the creation of a Probe Request packet, using scapy library.
 * [*simulator.py*](simulator.py) &rarr; contains all the informations and functions related to the simulator class.
-* [*utility.py*](utility.py) &rarr; contains some utility functions.
+* [*utils.py*](utils.py) &rarr; contains some utility functions.
 
 ### Contacts
 * Riccardo Rusca [riccardo.rusca@polito.it]
