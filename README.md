@@ -32,13 +32,14 @@ If you use the content of this repository, please reference the following paper:
 | Laptop | Apple  | MacBookPro | macOS 11.6.2 | 2015 |
 
 ### Files description
-* [*device.py*](src/device.py) &rarr; contains all the informations and functions related to the device class.
-* [*device_information.py*](src/read_features.py) &rarr; contains all the functions that read the device information in [*information1.txt*](database/general_features.json) and [*information2.txt*](information2.txt).
-* [*event.py*](src/event.py) &rarr; contains all the informations and functions related to the event class.
-* [*main_event.py*](src/main_event.py) &rarr; contains the main code, where all the input parameters are set.
-* [*packet.py*](src/packet.py) &rarr; contains the code for the creation of a Probe Request packet, using scapy library.
-* [*simulator.py*](src/simulator.py) &rarr; contains all the informations and functions related to the simulator class.
-* [*utils.py*](utility/utils.py) &rarr; contains some utility functions.
+* [*/src/device.py*](src/device.py) &rarr; contains all the informations and functions related to the device class.
+* [*/src/read_features.py*](src/read_features.py) &rarr; contains all the functions that read the device information in [*/database/general_features.json*](database/general_features.json) and [*/database/time_features.json*](/database/time_features.json).
+* [*/src/event.py*](src/event.py) &rarr; contains all the informations and functions related to the event class.
+* [*/src/main_event.py*](src/main_event.py) &rarr; contains the main code, where all the input parameters are set.
+* [*/src/packet.py*](src/packet.py) &rarr; contains the code for the creation of a Probe Request packet, using scapy library.
+* [*/src/simulator.py*](src/simulator.py) &rarr; contains all the informations and functions related to the simulator class.
+* [*/utility/utils.py*](utility/utils.py) &rarr; contains some utility functions.
+* [*/utility/oui_formatter.py*](utility/oui_formatter.py) &rarr; contains functions for OUI management.
 
 ### Contacts
 * Riccardo Rusca [riccardo.rusca@polito.it]
