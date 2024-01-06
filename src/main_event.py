@@ -22,8 +22,6 @@ DEVICE_CHOSEN = {
     "Apple iPhone11": 1,
 }
 
-REAL_MINUTES = 1
-
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Pass the arguments for the simulation')
 
