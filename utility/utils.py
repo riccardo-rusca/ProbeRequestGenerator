@@ -2,9 +2,10 @@ import random
 
 oui = {}
 
+
 def get_oui(vendor_name: str) -> [str, str]:
     if len(oui) == 0:
-        with open('utility/oui_hex.txt', encoding='utf-8') as f:
+        with open('./utility/oui_hex.txt', encoding='utf-8') as f:
             lines = f.readlines()
             for line in lines:
                 mac = line.strip().split("\t")[0]
@@ -40,7 +41,10 @@ def produce_sequenceNumber(frag: int, seq: int) -> int:
 
 def random_MAC() -> str:
     # output format: 62:AA:BB:C1:45:12
-    first_byte = int('%d%d%d%d%d%d10' % (random.randint(0, 1), random.randint(0, 1), random.randint(0, 1), random.randint(0, 1), random.randint(0, 1), random.randint(0, 1)), 2)
+    first_byte = int('%d%d%d%d%d%d10' % (
+    random.randint(0, 1), random.randint(0, 1), random.randint(0, 1), random.randint(0, 1), random.randint(0, 1),
+    random.randint(0, 1)), 2)
     mac_address = ("%02x:%02x:%02x:%02x:%02x:%02x" % (
-        first_byte, random.randint(0, 255), random.randint(0, 255), random.randint(0, 255), random.randint(0, 255), random.randint(0, 255))).lower()
+        first_byte, random.randint(0, 255), random.randint(0, 255), random.randint(0, 255), random.randint(0, 255),
+        random.randint(0, 255))).lower()
     return mac_address

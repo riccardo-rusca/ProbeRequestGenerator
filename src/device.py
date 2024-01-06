@@ -1,5 +1,5 @@
 from packet import *
-from utils import *
+from utility.utils import *
 import numpy as np
 
 HEXADECIMAL = [

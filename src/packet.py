@@ -1,7 +1,7 @@
 from datetime import datetime
 from scapy.layers.dot11 import Dot11, RadioTap, Dot11ProbeReq, Dot11Elt, Dot11EltRates, Dot11EltDSSSet, \
     Dot11EltVendorSpecific
-from utils import *
+from utility.utils import *
 from numpy import random
 
 def create_probe(vendor: str,

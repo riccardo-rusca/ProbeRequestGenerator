@@ -1,18 +1,23 @@
-from device import *
-from device_information import *
+from src.device import *
+from src.read_features import *
+
 
 class Simulator:
     """Device's model and vendor behaviour simulator"""
 
-    def __init__(self, out_file: str, avg_number_of_devices: int, avg_permanence_time: int):
+    def __init__(self, out_file: str, avg_number_of_devices: int, avg_permanence_time: int, closed_environment: bool):
         self.database = DeviceRates()
         self.out_file = out_file
+        open(out_file + '.txt', 'w')
+        open(out_file + '.pcap', 'w')
+        open(out_file + '_probe_ids.txt', 'w')
         self.next_id_device = 0
         self.events_list = []
         self.devices_list = []
         self.number_of_devices_available = 0
         self.average_number_of_devices_available = avg_number_of_devices
         self.average_permanence_time = avg_permanence_time
+        self.closed_environment = closed_environment
 
     def new_burst(self, time: datetime, device: Device) -> tuple[float, float, int, list]:
         """Manage device probe request creation and return the deltatime to add for the next probe request"""
