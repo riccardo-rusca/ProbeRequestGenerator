@@ -1,6 +1,5 @@
 import numpy as np
 from json import load
-import os
 
 
 class DeviceRates:
@@ -10,7 +9,6 @@ class DeviceRates:
         self._database = dict()
         # Populate the database with first information
         # This latter are about vendor, model, burst length, use of randomization and 802.11 capabilities
-        current_directory = os.getcwd()
         with open("./database/general_features.json", "r") as file_read:
             features = load(file_read)
             for f in features:
