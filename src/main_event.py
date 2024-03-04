@@ -28,7 +28,7 @@ if __name__ == "__main__":
     parser.add_argument('-o', '--out_file', type=str, help='Path to the output file', required=True)
     parser.add_argument('-n', '--average_number_of_devices', type=int, help='Average number of devices', required=True)
     parser.add_argument('-pt', '--average_permanence_time', type=int, help='Average permanence time for devices', required=True)
-    parser.add_argument('-t', '--real_minutes', type=int, help='Duration of the simulation', required=True)
+    parser.add_argument('-t', '--real_minutes', type=float, help='Duration of the simulation', required=True)
     parser.add_argument('-c', '--closed_environment', action="store_true", help='Set a closed environment for devices')
 
     args = parser.parse_args()
